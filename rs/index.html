@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDS Platforma</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/images/MDS.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGACIJA -->
+
+    <nav>
+        <div class="logo">
+            <a href="#home" class="scroll-to">
+                <img src="assets/images/MDS_LOGO.svg" alt="Logo">
+            </a>
+            <p>MDS Platforma</p>
+            <span class="language-switch">
+                <a id="English" name="English" href="../en/index.html" >EN</a>
+                <b><a id="Srpski" name="Srpski" href="index.html" class="active">SRP</a></b>
+            </span>			
+        </div>
+        <ul>
+            <li><a href="#home" class="scroll-to">Početna</a></li>
+            <li><a href="#about" class="scroll-to">O nama</a></li>
+            <li><a href="#services" class="scroll-to">Naše usluge</a></li>
+            <li><a href="#contact" class="scroll-to">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="ticker-container">
+        <div class="ticker" id="stock-ticker">
+            Učitavanje...
+        </div>
+    </div>
+    
+    <!-- HEADER (HERO SEKCIJA) -->
+
+    <header id="home" class="home">
+        <div class="home-content">
+            <h2>Investirajte pametno i istražite svet tržišta kapitala.</h2>
+            <form class="cta-form">
+                <p>Nemojte propustiti najnovije vesti iz sveta tržišta kapitala!</p>
+                <input type="email" name="email" placeholder="Unesite vašu email adresu" required>
+                <button type="submit">Prijavite se za obaveštenja</button>
+            </form>
+           <a href="#about" class="about-button scroll-to">Saznajte više</a>  
+        </div>
+    </header>
+
+    <!-- ABOUT SEKCIJA -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>O nama</h2>
+                    <p>
+                        MDS je inovativna i dinamična platforma koja se fokusira na tržište kapitala, pružajući korisnicima jedinstvenu priliku da postanu deo savremenih finansijskih tržišta. Naša misija je da unapredimo finansijsku pismenost i omogućimo lako dostupno ulaganje putem najmodernijih tehnoloških rešenja.
+                    </p>
+                    <p>
+                        Kroz našu platformu, korisnici mogu pristupiti specijalizovanim alatima za trgovanje akcijama, investiranje i obrazovanje o tržištu kapitala. Naša vizija je da postanemo lideri u pružanju digitalnih rešenja koja pojednostavljuju proces investiranja, omogućavajući svakome da postane deo globalnog finansijskog sistema.
+                    </p>
+                    <p>
+                        MDS platforma se odlikuje jednostavnošću, sigurnošću i transparentnošću, što je čini idealnim mestom za svakog investitora, bez obzira na nivo iskustva. Zajedno sa našim timom stručnjaka, posvećeni smo pružanju podrške korisnicima u svakom koraku njihovog investicionog puta.
+                    </p>
+                </div>
+                <div class="chart-container">
+                    <h3>MDS akcija - Najbrže rastuća akcija u svetu</h3>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <hr class="section-divider">
+
+    <!-- SERVICES SEKCIJA -->
+
+    <section id="services" class="services">
+        <div class="services-header">
+            <div class="services-image">
+                <img src="assets/images/MDS.png" alt="MDS" />
+            </div>
+            <h2>Naše usluge</h2>
+        </div>
+        
+        <div class="services-container">
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Trgovina akcijama</h3>
+                    <div class="full-description">
+                        <p>Kako funkcioniše trgovina akcijama na <strong>MDS Platformi</strong>?</p>
+                            <p><strong>Kupovina i prodaja akcija</strong> - Na MDS platformi možete lako kupovati i prodavati akcije velikih i poznatih kompanija, koristeći intuitivan interfejs za brzu i sigurnu trgovinu.</p>
+                            <p><strong>Real-time podaci i analize</strong> - Pristupite najnovijim podacima i analizama tržišta u realnom vremenu, kako biste donosili informisane i efikasne investicione odluke.</p>
+                            <p><strong>MDS Akcije</strong> - Investirajte u MDS akcije na našoj platformi, pružajući vam odličnu priliku za diversifikaciju i rast vašeg portfolija.</p>
+                            <p><strong>Automatska kupovina po zadatoj vrednosti</strong> - Naša platforma omogućava automatsku kupovinu akcija kada cena dostigne unapred definisanu vrednost, čime ostvarujete brže i efikasnije transakcije.</p>
+                            <p><strong>Obaveštenja o marginama</strong> - Pratite promenljive margine za vaše akcije i budite obavešteni putem e-maila ili SMS-a čim se dostigne ključna tačka, kako biste imali potpunu kontrolu nad svojim investicijama.</p>
+                            <p><strong>Praćenje trendova i obaveštenja o predefinisanim ciljevima</strong> - Na MDS platformi možete pratiti aktuelne tržišne trendove i biti obavešteni kad akcije dostignu predefinisane ciljeve, pomažući vam da pravovremeno reagujete na tržišne promene.</p>   
+                    </div>
+                    <button class="read-more-btn">Pročitaj više</button>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Edukacija</h3>
+                    <div class="full-description">
+                        <p><strong>MDS Platforma</strong> nudi edukaciju za sve nivoe investitora.</p>
+                            <p>- Osnove berzanskog poslovanja</p>
+                            <p>- Fundamentalnu i tehničku analizu</p>
+                            <p>- Strategije trgovanja i upravljanje rizikom</p>
+                            <p>- Napredne instrumente poput opcija i fjučersa</p>
+                            <p>- Mentorski programi i konsultacije</p>
+                    </div>
+                    <button class="read-more-btn">Pročitaj više</button>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Analiza tržišta</h3>
+                    <div class="full-description">
+                        <p>Šta uključuje analiza tržišta na <strong>MDS Platformi</strong>?</p>
+                            <p><strong>Real-time podaci</strong> - Pristup najnovijim informacijama o tržištu i akcijama u realnom vremenu.</p>
+                            <p><strong>Tehnička analiza</strong> - Korišćenje grafikona, indikatora i obrazaca da bi se predvideli budući trendovi.</p>
+                            <p><strong>Fundamentalna analiza</strong> - Analiza finansijskih izveštaja, poslovnih modela i ekonomskih faktora koji utiču na vrednost akcija.</p>
+                            <p><strong>Globalni tržišni uvidi</strong> - Praćenje makroekonomskih faktora i globalnih događaja koji mogu uticati na tržišta.</p>
+                    </div>
+                    <button class="read-more-btn">Pročitaj više</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <hr class="section-divider">
+
+    <!-- CONTACT US SEKCIJA -->
+
+    <section id="contact" class="contact">
+        <h2>Kontaktirajte nas</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Vaše ime" required>
+            <input type="email" name="email" placeholder="Vaš e-mail" required>
+            <textarea name="message" placeholder="Vaša poruka" required></textarea>
+            <button type="submit">Pošalji</button>
+            <div class="social-links">
+                <a href="https://www.facebook.com/pages/MDS%20Informati%C4%8Dki%20In%C5%BEenjering/527069177364876/"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/mds_ing/"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/company/mds-informaticki-inzenjering/?originalSubdomain=rs"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </form>
+        
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <p>&copy; 2025 MDS Platforma</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/pages/MDS%20Informati%C4%8Dki%20In%C5%BEenjering/527069177364876/"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/mds_ing/"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.linkedin.com/company/mds-informaticki-inzenjering/?originalSubdomain=rs"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <ul>
+            <li><a href="#home" class="scroll-to">Početna</a></li>
+            <li><a href="#about" class="scroll-to">O nama</a></li>
+            <li><a href="#services" class="scroll-to">Naše usluge</a></li>
+            <li><a href="#contact" class="scroll-to">Kontakt</a></li>
+            <a href="#" id="privacy-link">Politika privatnosti</a>
+        </ul>
+    </footer>
+    <div id="privacy-modal" class="privacy-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>Politika Privatnosti za MDS Platformu</h2>
+            <p>Na MDS platformi, posvećeni smo zaštiti vaše privatnosti i obezbeđivanju sigurnog online iskustva. Ova Politika privatnosti objašnjava kako prikupljamo, koristimo, delimo i štitimo vaše podatke kada posetite našu veb stranicu ili koristite naše usluge.</p>
+            <h3>1. Informacije koje prikupljamo</h3>
+            <p>Možemo prikupljati sledeće vrste informacija:</p>
+            <ul>
+                <li><strong>Lične informacije:</strong> Kada kreirate nalog ili nas kontaktirate, možemo prikupiti vaše ime, email adresu, broj telefona i druge lične podatke koje pružite.</li>
+                <li><strong>Podaci o korišćenju:</strong> Prikupljamo informacije o tome kako koristite našu veb stranicu, kao što su IP adrese, tip browser-a, operativni sistem i druge tehničke informacije.</li>
+                <li><strong>Kolačići i slične tehnologije:</strong> Koristimo kolačiće i druge tehnologije za poboljšanje vašeg iskustva na sajtu. Ove tehnologije nam pomažu da razumemo kako koristite naš sajt i omogućavaju nam da personalizujemo sadržaj i oglase.</li>
+            </ul>
+            <h3>2. Kako koristimo vaše podatke</h3>
+            <p>Prikupljene informacije koristimo u sledeće svrhe:</p>
+            <ul>
+                <li>Da pružimo, poboljšamo i prilagodimo naše usluge.</li>
+                <li>Da komuniciramo sa vama, uključujući slanje obaveštenja, novosti i promotivnih ponuda (sa vašim pristankom).</li>
+                <li>Da analiziramo korišćenje sajta i unapredimo korisničko iskustvo.</li>
+                <li>Da ispunimo zakonske obaveze.</li>
+            </ul>
+            <h3>3. Deljenje vaših podataka</h3>
+            <p>Ne prodajemo niti iznajmljujemo vaše lične informacije trećim stranama. Ipak, možemo deliti vaše podatke sa pouzdanim partnerima i pružaocima usluga koji nam pomažu u poslovanju, kao što su hosting usluge, analitičke usluge i procesori plaćanja. Ove treće strane su obavezane ugovorima o poverljivosti i smeju koristiti vaše podatke samo u svrhu pružanja usluga.</p>
+            <p>Takođe, možemo deliti vaše informacije ako to zahteva zakon ili u odgovoru na zakonski zahtev.</p>
+            <h3>4. Sigurnost podataka</h3>
+            <p>Preduzimamo odgovarajuće tehničke i organizacione mere kako bismo zaštitili vaše lične podatke. Ipak, imajte na umu da nijedna metoda prenosa podataka preko interneta nije potpuno sigurna, te ne možemo garantovati apsolutnu sigurnost informacija.</p>
+            <h3>5. Vaša prava</h3>
+            <p>Imate sledeća prava u vezi sa vašim ličnim podacima:</p>
+            <ul>
+                <li>Da pristupite i ažurirate svoje lične informacije.</li>
+                <li>Da zahtevate brisanje svojih podataka, u skladu sa važećim zakonodavstvom.</li>
+                <li>Da se odjavite od primanja promotivnih obaveštenja prateći instrukcije u emailovima koje šaljemo.</li>
+            </ul>
+            <h3>6. Promene u Politici privatnosti</h3>
+            <p>Ovu Politiku privatnosti možemo povremeno ažurirati. Sve promene će biti objavljene na ovoj stranici, a ažurirana verzija politike će biti na snazi odmah nakon objavljivanja. Preporučujemo vam da povremeno pregledate ovu politiku kako biste bili u toku sa načinom na koji štitimo vaše podatke.</p>
+            <h3>7. Kontaktirajte nas</h3>
+            <p>Ako imate bilo kakvih pitanja ili nedoumica u vezi sa našom Politikom privatnosti ili kako rukujemo vašim podacima, slobodno nas kontaktirajte na:</p>
+            <p>Email: <a href="mailto:mds@mds.rs">mds@mds.rs</a></p>
+            <p>Telefon: +381 11 20 15 200</p>
+            <p>Adresa: Milutina Milankovića 7d</p>
+            <p>Korišćenjem našeg sajta, pristajete na ovu Politiku privatnosti i prihvatate prikupljanje i korišćenje vaših podataka u skladu sa ovim uslovima.</p>
+        </div>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/stock-kajron.js"></script>
+    <script src="assets/js/custom-chart.js"></script>
+    <script src="assets/js/policy.js"></script>
+</body>
+</html>
